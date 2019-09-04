@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en_us">
+    <head>
+        <title>Home Address</title>
+        <meta charset="utf-8">
+        <script>
+            function address(){
+            let name = document.getElementById("nameID").value ;
+            let street = document.getElementById("streetID").value ;
+               let city =  document.getElementById("cityID").value ;
+               let state=  document.getElementById("stateID").value ;
+               let ZipCode =  document.getElementById("ZipID").value ;
+              //  let fullAddress= name+" "+ street+""+city+" "+ state+ZipCode;
+               let secondadd = city + state  +  ZipCode ;
+              // document.getElementById("Diveout").innerHTML=fullAddress;
+               document.getElementById("nameout").innerHTML=name;
+               document.getElementById("streetout").innerHTML=street;
+               document.getElementById("cityout").innerHTML=secondadd;
+               
+            }
+        </script>
+    </head>
+    <body>
+    Name: <input type="text" id="nameID" name="Name"><br><br>
+    Street: <input type="text" id="streetID" name="Street"><br><br>
+    City: <input type="text" id="cityID" name="City">
+    State: <input type="text" id="stateID" name="State">
+    ZipCode:<input type="text" id="ZipID" name="ZipCode"><br><br>
+
+        <button type = "button" onclick = "address()">Make Address</button>
+       <!----<div id = "Diveout" ></div>-->
+        <div id = "nameout" ></div>
+        <div id = "streetout"></div>
+        <div id = "cityout" ></div>
+
+    
+    </body>
+
+</html>
